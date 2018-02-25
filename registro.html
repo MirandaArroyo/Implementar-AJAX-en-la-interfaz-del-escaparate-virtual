@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/estilosSas.css"/>
+      <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Konbini online</title>
+  </head>
+    <body onload="campoPaises()">
+        <div class="container ">
+            <header class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-5 col-5">
+                        <img class="img-fluid" src="imagenes/logo.png" alt=""/>
+                    </div>
+                    <div class="col-lg-1 col-md-1 d-none d-md-block"><p></p></div>
+                    <div class="col-lg-8 col-md-6 col-7">
+                        <div class="fondoCabecera">
+                            <div class="row justify-content-end opciones ">
+                               <div class="col-lg-6 col-12">
+                                   <img class="img-fluid" src="imagenes/iconos/logIn2.png" alt=""/>
+                                   <a id="inicioSesion" href="login.html" onclick='cerrarSesion()'>Inicio sesion</a>
+                                   <img class="img-fluid" src="imagenes/iconos/logoCarrito2.png" alt=""/>
+                                   <a id="productos" href="#">[0]</a>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <nav><!--https://getbootstrap.com/docs/4.0/components/navbar/-->
+                <div class="espacioMenu col-lg-12 d-none d-md-block">
+                    <ul class="nav nav-pills nav-fill">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Dulces</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Salados</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Bebidas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Utensilios</a>
+                      </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-md-5 col-sm-7 col-10">
+                       <div class="formulario ">
+                        <div class="cabeceraFormulario">Formulario de registro</div>
+                        <form class="formularioRegistro" 
+                              method="post"  onsubmit="validaformulario()" name="formularioR">
+                            <label for="nombre">Nombre: *</label>
+                            <input type="text" id="nombre" required />
+                            <br>
+                            <label for="apellidos">Apellidos: *</label>
+                            <input type="text" id="apellidos" required/>
+                            <br>
+                            <label for="correo">Correo electronico: *</label>
+                            <input type="email" id="correo"/>
+                            <br>
+                            <label for="contrasenia">Contrase&ntilde;a: *</label>
+                            <input type="password" id="contrasenia"/>
+                            <br>
+                            <label for="confirmacion">Vuelve a introducir la contrase&ntilde;a: *</label>
+                            <input type="password" id="confirmacion"/>
+                            <br>
+                            <label for="sexo">Sexo:</label>
+                            <input type="radio" name="sexo" value="hombre"> Hombre
+                            <input type="radio" name="sexo" value="mujer"> Mujer<br>
+                            <br>
+                            <label for="nacimiento">Fecha de nacimiento:</label>
+                            <input type="date" id="nacimiento"/>
+                            <br>
+                            <label for="direccion">Direccion:</label>
+                            <input type="text" id="direccion" oninput="muestraCampo();"/>
+                            <br>
+                            <label for="pais">Pais:</label>
+                            <select name="pais" id="pais">
+                            
+                            </select>
+                            <br>
+                            <div id="Campotarjeta" style="display:none;">
+                                <label for="tarjeta" >Numero de tarjeta de credito:  </label>
+                                <input type="text" id="tarjeta"/><br>
+                            </div>
+                            <br>
+                            <label for="novedades"> Deseo recibir notificaciones de novedades </label>
+                            <input type="checkbox" name="novedades" value="si"><br>
+                            <label for="revista">Deseo recibir la revista digital</label>
+                            <input type="checkbox" name="revista" value="si"><br><br>
+                            <input type="submit" id="enviar" value="Enviar"/>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="col-lg-12">
+                <div class="pie">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-1 col-md-2 col-2">
+                            <img class="img-fluid" src="imagenes/iconos/facebook.png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-2">
+                            <img class="img-fluid" src="imagenes/iconos/twitter.png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-2">
+                            <img class="img-fluid" src="imagenes/iconos/instagram.png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-2">
+                            <img class="img-fluid" src="imagenes/iconos/pintirest.png" alt=""/>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-3 col-7">
+                            <p>Aviso legal</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-7">
+                            <p>métodos de pago</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-7">
+                            <p>contacto</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </footer>
+     </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+        <script type='text/javascript' src="js/jquery-3.2.1.js"></script><script type="text/javascript" src="js/scriptormulario.js"></script>
+        <script type="text/javascript" src="js/cifradoContrasenia.js"></script>
+  </body>
+</html>

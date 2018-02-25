@@ -1,0 +1,8 @@
+{
+  "productos": [
+    { "nombre": "taiyaki", "precio": "3€" },
+      { "nombre": "anpan", "precio": "3€" },
+      { "nombre": "mochi", "precio": "3€" },
+      { "nombre": "dango", "precio": "3€" }
+  ]
+}

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+      <style>
+          .borde{border: 1px solid;}
+          .imagenes{width: 100%; }
+      </style>
+      <link rel="stylesheet" href="css/estilosSas.css"/>
+      <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Konbini online</title>
+  </head>
+    <body>
+        <div class="container ">
+            <header class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-5 col-5">
+                        <img class="img-fluid" src="imagenes/logo.png" alt=""/>
+                    </div>
+                    <div class="col-lg-1 col-md-1 d-none d-md-block"><p></p></div>
+                    <div class="col-lg-8 col-md-6 col-7">
+                        <div class="fondoCabecera">
+                            <div class="row justify-content-end opciones ">
+                               <div class="col-lg-6 col-12">
+                                   <img class="img-fluid" src="imagenes/iconos/logIn2.png" alt=""/>
+                                   <a id="inicioSesion" href="login.html" onclick='cerrarSesion()'>Inicio sesion</a>
+                                   <img class="img-fluid" src="imagenes/iconos/logoCarrito2.png" alt=""/>
+                                   <a id="productos" href="#">[0]</a>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <nav><!--https://getbootstrap.com/docs/4.0/components/navbar/-->
+                <div class="espacioMenu col-lg-12 d-none d-md-block">
+                    <ul class="nav nav-pills nav-fill">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Dulces</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Salados</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Bebidas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Utensilios</a>
+                      </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-5 col-sm-7 col-10">
+                        <div class="formularioSesion">
+                        <div class="cabeceraFormulario">Formulario de registro</div>
+                        <form class="formInicio"
+                              method="post" action='#'  onsubmit="return confirmaCookie()" >
+                            <label for="nombre2">Nombre: </label>
+                            <input type="text" id="nombre2"/>
+                            <br>
+                            <label for="pass">Contrase&ntilde;a: </label>
+                            <input type="password" id="pass"/>
+                            <br><br>
+                            <input type="submit" id="enviar" value="Enviar"/>
+                            <br><br>
+                             <a>¿No tienes cuenta? registrate</a> <a  href="registro.html">aqui</a>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="col-lg-12">
+                <div class="pie">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-1 col-md-2 col-2">
+                            <img class="img-fluid" src="imagenes/iconos/facebook.png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-2">
+                            <img class="img-fluid" src="imagenes/iconos/twitter.png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-2">
+                            <img class="img-fluid" src="imagenes/iconos/instagram.png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-2">
+                            <img class="img-fluid" src="imagenes/iconos/pintirest.png" alt=""/>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-3 col-7">
+                            <p>Aviso legal</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-7">
+                            <p>métodos de pago</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-7">
+                            <p>contacto</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </footer>
+     </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+        <script type='text/javascript' src="js/jquery-3.2.1.js"></script><script type="text/javascript" src="js/scriptormulario.js"></script>
+        <script type="text/javascript" src="js/cifradoContrasenia.js"></script>
+  </body>
+</html>

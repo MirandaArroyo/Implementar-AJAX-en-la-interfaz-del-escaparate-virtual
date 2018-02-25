@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>KonbiniOnline</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/text.css" />
+        <link rel="stylesheet" href="css/960.css" /><link rel="stylesheet" href="./proyecto/css/estilosSas.css" />
+        <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <main class="container_12">
+            <header class= "grid_12">
+                <div class="grid_3 alpha">
+                    <img class="imglogo" src="imagenes/logo.png" alt=""/>
+                </div>
+                <div class="grid_8 prefix_1 omega">
+                   <div class="fondoCabecera">
+                       <div class="opciones">
+                           <img class="opcion" src="imagenes/iconos/logIn2.png" alt=""/>
+                            <a id="inicioSesion" onclick='cerrarSesion()' href="inicioSesion.html">Inicio sesion</a>
+                           <img class="opcion" src="imagenes/iconos/logoCarrito2.png" alt=""/>
+                       </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </header>
+            <div class="clear"></div>
+            <nav class="grid_12">
+                <div class="espacioMenu">
+                    <div class="menu">
+                        <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="dulces.html">Dulces</a></li>
+                          <li><a href="">Salados</a></li>
+                          <li><a href="">Bebidas</a></li>
+                          <li><a href="utensilios.html">Utensilios</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </nav>
+            <div class="clear"></div>
+            <div class="grid_6 prefix_6">
+                <!--buscador -->
+                <div class="buscador">
+                   <img class="busc" src="imagenes/buscador.png" alt=""/>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!--<section class ="grid_12">-->
+                <section class="grid_3">
+                <div class="menuLateral">
+                    <div class="titulo">
+                        <p>Categorias</p>
+                    </div>
+                    <nav id="menu">
+                        <ul>
+                            <li class="primero"><a href="#">Todos los productos</a>
+                            </li>
+                            <li><a href="#">Dulces</a>
+                            <ul>
+                                <li><a href="#">Taiyaki</a>
+                                </li>
+                                <li><a href="#">Mochi</a>
+                                </li>
+                                <li><a href="#">Dango</a>
+                                </li>
+                            </ul>
+                            </li>
+                            <li><a href="#">Salados</a>
+                                <ul>
+                                <li><a href="#">Ramen</a>
+                                </li>
+                                <li><a href="#">Sopas</a>
+                                </li>
+                            </ul>
+                            </li>
+                            <li><a href="#">Bebidas</a>
+                                <ul>
+                                <li><a href="#">Te</a>
+                                </li>
+                                <li><a href="#">Refrescos</a>
+                                </li>
+                            </ul>
+                            </li>
+                            <li><a href="#">Utensilios</a>
+                                <ul>
+                                    <li><a href="#">Palillos</a>
+                                    </li>
+                                    <li><a href="#">Boles</a>
+                                    </li>
+                                    <li><a href="#">Kit Te</a>
+                                    </li>
+                                    <li><a href="#">Kit Sushi</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                </section>
+                <section class="grid_9 ">
+                    <div id="contenedor">
+                        <article class="grid_3 alpha caja">
+                            <img class="dulces" src="imagenes/imagenes_modificadas/taiyaki.jpg" alt="" />
+                            <div class="descripcion">
+                                <a href="descripcion.html">
+                                    <p class="tit">Taiyaki</p>
+                                    <p>
+                                        Delicioso bollo japones relleno de chocolate</p>
+                                </a>
+                                <br><i class="fa fa-heart fa-2x" onclick="likes()">6</i>
+                                <i class="fa fa-star fa-2x" aria-hidden="true" onclick="favorito()">2</i>
+                                <i class="fa fa-comment fa-2x" aria-hidden="true">3</i>
+                            </div>
+                            <img class="precio" src="imagenes/iconos/precio.png" alt=""/>
+                        </article>
+                        <article class="grid_3 caja">
+                            <img class="dulces" src="imagenes/imagenes_modificadas/anpan.jpg" alt=""/>
+                            <div class="descripcion" >
+                                <p class="tit">Anpan</p>
+                                <p>
+                                    bollo dulce japonés relleno con anko (pasta de judía azuki)</p>
+                                <br><i class="fa fa-heart fa-2x" onclick="likes()">1</i>
+                                <i class="fa fa-star fa-2x" aria-hidden="true" onclick="favorito()">4</i>
+                                <i class="fa fa-comment fa-2x" aria-hidden="true">8</i>
+                            </div>
+                            <img class="precio" src="imagenes/iconos/precio.png" alt=""/>
+                        </article>
+                        <article class="grid_3 omega caja">
+                            <img class="dulces" src="imagenes/imagenes_modificadas/sakuramochiReducida.jpg" alt=""/>
+                            <div class="descripcion" >
+                                <p class="tit">Sakura mochi</p>
+                                <p>
+                                    pastel de arroz japonés con sabor a fresa</p>
+                                <br><i class="fa fa-heart fa-2x" onclick="likes()">12</i>
+                                <i class="fa fa-star fa-2x" aria-hidden="true" onclick="favorito()">3</i>
+                                <i class="fa fa-comment fa-2x" aria-hidden="true">9</i>
+                            </div>
+                            <img class="precio" src="imagenes/iconos/precio.png" alt=""/>
+                        </article>
+                        <article class="grid_3 alpha caja">
+                            <img class="dulces" src="imagenes/imagenes_modificadas/chocolatina.jpg" alt=""/>
+                            <div class="descripcion" >
+                                <p class="tit">Chocolatina</p>
+                                <p>
+                                    chocolatina tradicional </p>
+                                <br><i class="fa fa-heart fa-2x" onclick="likes()">14</i>
+                                <i class="fa fa-star fa-2x" aria-hidden="true" onclick="favorito()">9</i>
+                                <i class="fa fa-comment fa-2x" aria-hidden="true">3</i>
+                            </div>
+                            <img class="precio" src="imagenes/iconos/precio.png" alt=""/>
+                        </article>
+                        <article class="grid_3 caja">
+                            
+                            <img class="dulces" src="imagenes/imagenes_modificadas/dango.jpg" alt="" />
+                            <div class="descripcion" >
+                                <p class="tit">Dango</p>
+                                <p>
+                                    elaborado con harina de arroz (mochiko).</p>
+                                <br><i class="fa fa-heart fa-2x" onclick="likes()">2</i>
+                                <i class="fa fa-star fa-2x" aria-hidden="true" onclick="favorito()">1</i>
+                                <i class="fa fa-comment fa-2x" aria-hidden="true">3</i>
+                            </div>
+                            <img class="precio" src="imagenes/iconos/precio.png" alt=""/>
+                        </article>
+                        <article class="grid_3 omega caja">
+                            <img class="dulces" src="imagenes/imagenes_modificadas/buns-2784547_640.jpg" alt=""/>
+                            <div class="descripcion" >
+                                <p class="tit">bollo panda</p>
+                                <p>
+                                    Delicioso bollo con forma de panda relleno de chocolate</p>
+                                <br><i class="fa fa-heart fa-2x" onclick="likes()">7</i>
+                                <i class="fa fa-star fa-2x" aria-hidden="true" onclick="favorito()">9</i>
+                                <i class="fa fa-comment fa-2x" aria-hidden="true">1</i>
+                            </div>
+                            <img class="precio" src="imagenes/iconos/precio.png" alt=""/>
+                        </article>
+                    </div>
+                     <div class="clear"></div>
+                </section>
+            <!--</section>-->
+            
+            <div class="clear"></div>
+            <footer class="grid_12">
+                <div class="pie">
+                    <div class="icons">
+                        <img class="iconos" src="imagenes/iconos/facebook.png" alt=""/>
+                        <img class="iconos" src="imagenes/iconos/instagram.png" alt=""/>
+                        <img class="iconos" src="imagenes/iconos/pintirest.png" alt=""/>
+                        <img class="iconos" src="imagenes/iconos/twitter.png" alt=""/>
+                    </div>
+                    <div class="icons">
+                        <p>Aviso legal</p>
+                        <p>métodos de pago</p>
+                        <p>contacto</p>
+                    </div>
+                </div>
+            </footer>
+            <div class="clear"></div>
+        </main><!--fin del "div web" -->
+        <script type='text/javascript' src="js/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="js/scrptDesplegable.js"></script>
+        <script type="text/javascript" src="js/scriptormulario.js"></script>
+    </body>
+</html>

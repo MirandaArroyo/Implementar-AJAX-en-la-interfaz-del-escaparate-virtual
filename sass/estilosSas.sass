@@ -1,0 +1,355 @@
+$primary-color: #ff80bf
+$secundary-color: #ffb3d9
+@font-face
+    font-family: fuente 
+    src: url("../tipografias/Korean_Calligraphy.ttf")
+    
+$borde-gris: 1px solid grey
+
+/*----------Cabecera------------*/
+    
+.fondoCabecera
+    height: 100%
+    background-image: url(../imagenes/prueba.png)
+    background-repeat: no-repeat
+    background-size: 100% auto
+    
+.opciones 
+    height: 100%
+    align-items: flex-end
+
+
+.opciones img
+    width: 20%
+    
+    //margin-top: 20px
+    //margin-left: 200px
+
+
+/*-----------buscador--------------*/
+.buscador
+    margin-top: 1px
+    margin-bottom: 1px
+.form-control:focus 
+    color: #495057
+    background-color: #fff
+    border-color: white
+    outline: 0
+    box-shadow: 0 0 0 0.1rem grey
+    
+.busqueda
+    position: absolute
+    z-index: 99
+    background-color: white
+.hamburguesa
+    background-color: white
+/*-----------menu--------------*/
+
+.espacioMenu
+    justify-content: center
+    //background-color: $primary-color
+    font-family: fuente
+.espacioMenu li
+    background-color: $primary-color
+.espacioMenu a
+    font-size: 150%
+    color: black
+    
+.espacioMenu li:hover
+    background-color: $secundary-color
+
+
+.navbar-white .navbar-toggler
+    background-color: white
+    //color: red
+    border-color: pink
+.bg-white 
+    background-color: $primary-color !important; 
+
+/*-----------carrusel--------------*/
+.carrusel
+     background-color: papayawhip
+
+/*-----------botones debajo del carrusel--------------*/
+.botonesOfertas .row
+    justify-content: center
+.boton
+    justify-content: center
+    background-image: url(../imagenes/fondo1.jpg)
+    margin: 15px
+    border: 3px dotted black
+    border-radius: 200px
+
+.boton:hover
+    box-shadow: 3px 3px 3px 1px grey
+    cursor: pointer
+    
+.boton:active
+    box-shadow: 3px 3px 3px 1px grey inset
+/*----------productos------------*/
+.contenedor
+    height: 600px
+    text-align: center
+    display: table
+    //margin: 0 auto
+
+.contenedor .caja
+    height: 250px
+    width: 200px
+    //margin: 8px
+    border: 8px solid $secundary-color
+    
+//.dulces
+    height: 188px
+    width: 200px
+    
+//.precio
+    height: 60px
+    width: 200px
+    
+.caja 
+  width: 300px
+  height: 200px
+  //margin-top: 10px
+  //position: relative
+
+
+
+.descripcion 
+  margin: auto 
+  color: #000
+  height: 100%
+  //width: 300px
+  height: 200px
+  background: #fff //papayawhip
+  transition: opacity .4s linear
+  position: absolute
+  top: 0
+  right: 0
+  left: 0
+  opacity: 0
+  
+
+.descripcion:hover 
+  opacity: .75  
+    
+.descripcion p
+  font-family: Calibri
+  font-size: 200%
+  margin: 0
+.descripcion a
+  color: black
+  text-decoration: none
+  cursor: pointer  
+
+.descripcion .tit
+    margin-top: 0
+    font-family: fuente
+//.fa-star
+    color: blue
+.fa-heart:hover
+    color: red
+.fa-star:hover
+    color: yellow
+.fa-comment:hover
+    color: grey
+
+.descripcion .iconos
+    
+    
+/*-----------scroll--------------*/
+.seccion
+    height: 300px
+    background-image: url(../imagenes/skyline.png)
+    //position: relative
+    //heigth: 100%
+    background-repeat: no-repeat
+    background-size: 100% auto
+    
+    //border: 1px solid black
+    
+.seccion p
+    position: absolute
+    margin: 100px
+    margin-left: 150px
+    animation-name: none
+    animation-duration: 4s
+    font-size: auto
+
+@keyframes example2
+    0%   
+        color: white
+    
+    25%   
+        color: white
+    100% 
+        color: black
+
+    
+.imagen1 
+  opacity: 0
+  -moz-transition: all 1.5s linear
+  -webkit-transition: all 1.5s linear
+  -o-transition: all 1.5s linear
+  transition: all 1.5s linear
+  -moz-transform: translate3d(-200px, 0px, 0px)
+  -webkit-transform: translate3d(-200px, 0px, 0px)
+  -o-transform: translate(-200px, 0px)
+  -ms-transform: translate(-200px, 0px)
+  transform: translate3d(-200px, 0px, 0px)
+
+
+.imagen1.in-view 
+  opacity: 1
+  -moz-transform: translate3d(690px, 0px, 0px)
+  -webkit-transform: translate3d(690px, 0px, 0px)
+  -o-transform: translate(690px, 0px)
+  -ms-transform: translate(690px, 0px)
+  transform: translate3d(690px, 0px, 0px)
+
+/*animation slide left styled for testimonials*/
+
+.imagen1 
+  margin: 0% 1.5% 3% 1.5%
+  //background: #F5F5F5
+  padding: 15px
+  //box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2)
+  //border: solid 1px #EAEAEA
+
+
+@keyframes example
+    0%   
+        -webkit-transform: rotate(0deg)
+        -moz-transform: rotate(0deg)
+        -o-transform: rotate(0deg)
+        -ms-transform: rotate(0deg)
+    
+        
+    100% 
+        -webkit-transform: rotate(360deg)
+        -moz-transform: rotate(360deg)
+        -o-transform: rotate(360deg)
+        -ms-transform: rotate(360deg)
+
+.imagen1 img
+    animation-name: none
+    animation-duration: 3s 
+    
+/*-----------footer--------------*/
+.pie
+    margin-top: 30px
+    background: -webkit-linear-gradient( white, #ffb3d9)
+    background: -o-linear-gradient(white, #ffb3d9)
+    background: -moz-linear-gradient(white, #ffb3d9)
+    background: linear-gradient( white, #ffb3d9)
+    
+.icons 
+    text-align: left
+    display: table
+    margin: 0 auto
+    
+.iconos
+    float: left
+    padding: 15px
+    height: 50px
+    width: 50px
+    
+.icons p
+    float: left
+    padding: 10px
+    font-family: fuente
+    font-size: 20px
+    
+/*-----descripcion.html->descripcion del producto-----*/
+
+.imagenProducto
+    display: flex
+    flex-direction: column
+    //width: 210px
+    border: 5px dotted black
+.imagenProducto img
+    width: auto
+    
+.comprar
+    display: flex
+    //float: left
+    //height: 200px
+    //width: 100%
+    //border: 2px solid black
+    //margin-top: 50px
+    //margin-bottom: 20px
+    //margin-left: 90px
+    justify-content: center
+.des
+    font-family: Calibri
+
+#enviar
+    
+    //font-size: 15px
+    font-family: Calibri
+    color: white
+    background: $primary-color
+    border: 0px
+    //width: 30%
+    //height: 25px
+    //margin-left: 130px
+    margin-bottom: 5px
+    
+.iconosImagen
+    width: 100%
+.unidades
+    width: 10px
+/*-----inicio de sesion-----*/
+.formulario
+    margin-left: 250px
+    margin-top: 20px
+    margin-bottom: 10px
+    //height: 500px
+    width: 600px
+    background-color: #FFFDE1
+    font-family: calibri
+    //font-size: 150%
+    border: 3px solid black
+    box-shadow:  2px -1px 8px 6px grey
+    border-radius: 20px
+    
+.formularioSesion
+    //float: left
+    //margin-left: 300px
+    margin-top: 30px
+    height: 250px
+    width: 300px
+    background-color: #FFFDE1
+    font-family: calibri
+    //font-size: 150%
+    border: 3px solid black
+    border-radius: 20px
+    
+.cabeceraFormulario
+    height: 35px
+    text-align: center
+    font-family: fuente
+    font-size: 150%
+    background-color: $primary-color
+    border-radius: 15px 15px 0px 0px
+    
+.formularioRegistro
+    margin-top: 10px
+    margin-left: 100px
+.formInicio
+    margin-top: 10px
+    margin-left: 30px
+.formInicio #enviar
+    margin-left: 70px
+.formulario #enviar
+    margin-left: 150px
+    margin-bottom: 10px
+/*----------------------------------------------------------------------*/
+p
+    text-align: center
+    font-size: 25px
+    margin-top: 20px
+    font-family: fuente
+.borde
+    border: 1px solid
+    
