@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/estilosSas.css"/>
+      <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Konbini online</title>
+  </head>
+  
+      
+    <body>
+        <div class="container  ">
+            <header class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-5 col-5  ">
+                        <img class="img-fluid" src="imagenes/logo.png" alt=""/>
+                    </div>
+                    <div class="  col-lg-1 col-md-1 d-none d-md-block"><p></p></div>
+                    <div class="col-lg-8 col-md-6 col-7  ">
+                        <div class="fondoCabecera">
+                            <div class="row justify-content-end opciones ">
+                               <div class="col-lg-6 col-12">
+                                   <img class="img-fluid" src="imagenes/iconos/logIn2.png" alt=""/>
+                                   <a id="inicioSesion" href="login.html" onclick='cerrarSesion()'>Log in</a>
+                                   <img class="img-fluid" src="imagenes/iconos/logoCarrito2.png" alt=""/>
+                                   <a id="productos" href="#">[0]</a>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <div class="espacioMenu col-lg-12 d-none d-md-block">
+                    <ul class="nav nav-pills nav-fill">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Sweets</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Salty</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Drinks</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Cookware</a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 d-block d-sm-none">
+                    <div class="pos-f-t">
+                          <div class="collapse" id="navbarToggleExternalContent">
+                            <div class="bg-white p-4">
+                              <nav class="espacioMenu nav flex-column">
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="dulces.html">Sweets</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Salty</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Drinks</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Cookware</a>
+                                  </li>
+                                </nav>
+                            </div>
+                          </div>
+                          <nav class="navbar navbar-white bg-white">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <i class="fa fa-bars"></i>
+                            </button>
+                          </nav>
+                        </div>
+                </div>
+            </nav>
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="">Sweets</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Taiyaki</li>
+                  </ol>
+                </nav>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-5 col-sm-7 col-10">
+                        <div class="imagenProducto justify-content-center">
+                            <img src="imagenes/productos/taiyaki.jpg"/>
+                            <div class="row justify-content-center">
+                            <div class="col-lg-2 col-md-2 col-2 iconosImagen">
+                                <i class="fa fa-heart img-fluid" onclick="likes()">6</i>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-2 iconosImagen">
+                                <i class="fa fa-star img-fluid" aria-hidden="true" onclick="favorito()">2</i>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-2 iconosImagen">
+                                <i class="fa fa-comment img-fluid" aria-hidden="true">3</i>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-2 iconosImagen">
+                                <i class="fa fa-share-alt img-fluid" aria-hidden="true"></i>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6  ">
+                        <div class="row">
+                        <div class="col-lg-12 comprar">
+                            <p>Taiyaki</p>
+                        </div>
+                        <div class="col-lg-12 comprar">
+                            <p class="des">Delicious Japanese bun filled with chocolate</p>
+                        </div>
+                            <div class="col-lg-12 comprar">
+                            <form>
+                                <label>Units:</label>
+                                <input type="number" class="unidades" style="width: 50px">
+                            </form>
+                        </div>
+                        <div class="col-lg-12 comprar">
+                            <input type="submit" id="enviar" value="Add to Cart"/>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="col-lg-12">
+                <div class="pie">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-1 col-md-2 col-2">
+                            <a href="#"><img class="img-fluid" src="imagenes/iconos/facebook.png" alt="icono facebook"/></a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-2">
+                            <a href="#"><img class="img-fluid" src="imagenes/iconos/twitter.png" alt="icono twitter"/></a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-2">
+                            <a href="#"><img class="img-fluid" src="imagenes/iconos/instagram.png" alt="icono instagram"/></a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-2">
+                            <a href="#"><img class="img-fluid" src="imagenes/iconos/pintirest.png" alt="icono pintirest"/></a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-3 col-7">
+                            <a href="#" style="color: black; text-decoration: none"><p>legal warning</p></a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-7">
+                            <a href="#" style="color: black; text-decoration: none"><p>payment methods</p></a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-7">
+                            <a href="#" style="color: black; text-decoration: none"><p>contact us</p></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </footer>
+        </div> 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+        <script type='text/javascript' src="js/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/animacionScroll.js"></script>
+  </body>
+</html>
